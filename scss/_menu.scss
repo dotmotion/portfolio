@@ -11,7 +11,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: set-text-color($primary-color);
     @include animation;
   }
 
@@ -43,7 +43,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
+  opacity: 0.95;
   visibility: hidden;
 
   &.show {
@@ -117,6 +117,7 @@
     padding: 1rem 0;
     text-decoration: none;
     font-weight: 300;
+    color: set-text-color($primary-color);
     @include animation;
 
     &:hover {
@@ -126,7 +127,7 @@
 }
 
 //Delay nav items by 0.1s
-@for $x from 1 through 3 {
+@for $x from 1 through 4 {
   .nav-item:nth-child(#{$x}) {
     transition-delay: $x * 0.1s;
   }
