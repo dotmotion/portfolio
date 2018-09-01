@@ -37,7 +37,7 @@ h3 {
 }
 
 a {
-  color: #fff;
+  color: #e2e6e8;
   text-decoration: none;
 }
 
@@ -136,8 +136,9 @@ main {
   grid-gap: 0.7rem;
 
   img {
-    width: 100%;
-    border: 3px #fff solid;
+    width: 350px;
+    height: 350px;
+    border: 3px #e2e6e8 solid;
 
     &:hover {
       opacity: 0.5;
@@ -163,13 +164,15 @@ main {
 .btn-dark {
   @extend .btn;
   background: darken($primary-color, 50);
-  color: #fff;
+  color: #e2e6e8;
+  max-width: 350px;
 }
 
 .btn-light {
   @extend .btn;
   background: lighten($primary-color, 50);
-  color: #333;
+  color: #16191b;
+  max-width: 350px;
 }
 
 #main-footer {
